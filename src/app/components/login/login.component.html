@@ -1,0 +1,23 @@
+<div class="container">
+  <p>login works!</p>
+
+  <h2>Login</h2>
+
+  <label>Email:</label>
+  <input type="email" [(ngModel)]="email">
+
+  <label>Senha:</label>
+  <input type="password" [(ngModel)]="senha">
+
+  <button (click)="validarLogin()">Entrar</button>
+
+  <div *ngIf="status === 'vazio'">
+    <p>Campos obrigatórios!</p>
+  </div>
+  <div *ngIf="status === 'invalido'">
+    <p>Credenciais inválidas!</p>
+  </div>
+  <div *ngIf="status === 'sucesso'">
+    <p>Login bem-sucedido!</p>
+  </div>
+</div>

@@ -1,1 +1,130 @@
 /* You can add global styles to this file, and also import other style files */
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  color: #333;
+}
+
+/* CONTAINERS PADRÃO */
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* TÍTULOS E TEXTOS */
+.titulo,
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* FORMULÁRIOS */
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* BOTÕES */
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem 0 0;
+  font-size: 1rem;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+/* FEEDBACK */
+.resultado {
+  color: #2196f3;
+  font-weight: bold;
+}
+
+.erro {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.vazio {
+  color: #777;
+  font-style: italic;
+}
+
+/* LISTAS */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 0.5rem;
+  background-color: #eee;
+  margin: 0.25rem 0;
+  border-radius: 6px;
+}
+
+.lista .item {
+  background-color: #dfe6e9;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  border-radius: 4px;
+}
+
+.color-red {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* BOTÕES AGRUPADOS */
+.botoes {
+  margin-top: 1rem;
+}
+
+/* MODO RESPONSIVO */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  input,
+  select {
+    width: 100%;
+  }
+}

@@ -1,20 +1,19 @@
-<p>meses works!</p>
-<label id="month">
-  Troque o mês!
-</label>
+<div class="container">
+  <p class="titulo">meses works!</p>
 
-<input
-  type="number"
-  value={{month}}
-  (change)="changeMonth($event)"
-/>
+  <div class="form-group">
+    <label for="month">Troque o mês!</label>
+    <input
+      id="month"
+      type="number"
+      [value]="month"
+      (change)="changeMonth($event)"
+    />
+  </div>
 
-@if (month > 12) {
-  <p>
-    Número inválido digitado!
-  </p>
-} @else {
-  <p>
-    {{months[month - 1]}}
-  </p>
-}
+  @if (month > 12) {
+    <p class="erro">Número inválido digitado!</p>
+  } @else {
+    <p class="resultado">{{ months[month - 1] }}</p>
+  }
+</div>

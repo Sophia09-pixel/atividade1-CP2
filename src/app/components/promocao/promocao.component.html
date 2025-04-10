@@ -1,0 +1,14 @@
+<div class="container">
+  <p>promocao works!</p>
+
+  <h2>Lista de Produtos</h2>
+
+  <ul>
+    <li *ngFor="let produto of produtos"
+    [ngClass]="{ 'color-red': produto.promocao }">
+    {{ produto.nome }} - R$ {{ produto.preco }}
+  </li>
+</ul>
+
+<p *ngIf="produtos.length === 0">Nenhum produto cadastrado</p>
+</div>

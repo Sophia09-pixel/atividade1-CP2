@@ -1,0 +1,25 @@
+<div class="container">
+  <p>switch works!</p>
+
+  <h2>Switch com Números e Strings</h2>
+
+  <label>Informe um valor:</label>
+  <input [(ngModel)]="valor" placeholder="Digite 1 ou 'dois'">
+
+  <div>
+    @switch (valor) {
+      @case (1) {
+        <p>Um</p>
+      }
+      @case ('1') {
+        <p>Um</p>
+      }
+      @case ('dois') {
+        <p>Dois</p>
+      }
+      @default {
+        <p>Valor não reconhecido</p>
+      }
+    }
+  </div>
+</div>
