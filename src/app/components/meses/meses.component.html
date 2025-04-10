@@ -1,0 +1,20 @@
+<p>meses works!</p>
+<label id="month">
+  Troque o mês!
+</label>
+
+<input
+  type="number"
+  value={{month}}
+  (change)="changeMonth($event)"
+/>
+
+@if (month > 12) {
+  <p>
+    Número inválido digitado!
+  </p>
+} @else {
+  <p>
+    {{months[month - 1]}}
+  </p>
+}
