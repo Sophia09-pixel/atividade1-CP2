@@ -1,12 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-compras',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './compras.component.html',
   styleUrl: './compras.component.css'
 })
 export class ComprasComponent {
-  itens: string[] = ["Maças, Banana, Leite"];
+  itens: string[] = ["Maçãs", "Banana", "Leite"];
 }

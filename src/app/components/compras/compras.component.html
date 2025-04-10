@@ -1,2 +1,9 @@
 <p>compras works!</p>
+<div *ngIf="itens.length > 0">
+  <p *ngFor="let intem of itens">{{intem}}</p>
+</div>
+
+<div *ngIf="itens.length <= 0">
+  <p>Nenhum item na lista</p>
+</div>
 

@@ -1,0 +1,16 @@
+<p>acesso works!</p>
+<label>
+  Digite sua idade:
+  <input type="number" [(ngModel)]="idade">
+</label>
+
+
+@if (idade >= 18) {
+  <p>Acesso permitido</p>
+} @else {
+  <p>Acesso negado</p>
+}
+
+<button (click)="diminuirIdade()">-</button>
+<button (click)="aumentarIdade()">+</button>
+

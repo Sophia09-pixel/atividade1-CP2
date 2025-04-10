@@ -10,10 +10,10 @@ import { Component } from '@angular/core';
 })
 export class MesesComponent {
   month = 1
-  months = ['Jan','Fev','Mar','Abr','Maio','Jun','Jul','Ago','Set','Out','Nov','Dez']
+  months = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
 
   changeMonth (event:Event):void {
-    const target = event.target as HTMLSelectElement;
+    const target = event.target as HTMLInputElement;
     this.month = Number(target.value);
   }
 }
